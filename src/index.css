@@ -2,3 +2,17 @@ body {
   margin: 3rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: lightsteelblue;
+  border-bottom: lightslategrey;
+  height: 5rem;
+  width: 100%;
+}
+
+a {
+  margin: 1rem 2rem 1rem 2rem;
+  color: black;
+}

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Nav from './components/Nav';
+import Products from './components/Products';
+import Companies from './components/Companies';
 
 const API = 'https://acme-users-api-rev.herokuapp.com';
 

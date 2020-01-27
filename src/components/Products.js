@@ -1,16 +1,16 @@
 import React from 'react';
 
-const Companies = ({ companies }) => {
+const Products = ({ products }) => {
   return (
     <div>
-      <h1>Companies</h1>
+      <h1>Products</h1>
       <ul>
-        {companies.map(company => {
-          return <li key={company.id}>{company.name}</li>
+        {products.map(product => {
+          return <li key={product.id}>{product.name}<br></br>{product.price}</li>
         })}
       </ul>
     </div>
   )
 }
 
-export default Companies;
+export default Products;
