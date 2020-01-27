@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Nav from './components/Nav';
 
 const API = 'https://acme-users-api-rev.herokuapp.com';
+
 
 function App() {
   const [products, setProducts] = useState([]);
   const [companies, setCompanies] = useState([]);
   const [view, setView] = useState('products');
-
 
   useEffect(() => {
     axios.get(`${API}/api/companies`)
@@ -22,13 +23,10 @@ function App() {
 
   return (
     <div className="App">
-      <nav>
-
-      </nav>
+      <Nav products={products} companies={companies} view={view} setView={setView} />
       <main>
         { view === 'products' && <Products products={products} /> }
         { view === 'companies' && <Companies companies={companies}/> }
-
       </main>
     </div>
   );
