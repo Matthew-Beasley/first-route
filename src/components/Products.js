@@ -1,4 +1,5 @@
 import React from 'react';
+import qs from 'qs';
 
 const Products = ({ products }) => {
   return (
